@@ -7,6 +7,7 @@
     <authors>Recruit Wizard</authors>
     <owners>Recruit Wizard</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">Apache-2.0</license>
     <projectUrl>https://github.com/RecruitWizard/RecruitWizard.Encryption</projectUrl>
     <description>Simple Encryption Library used across Recruit Wizard products</description>
     <releaseNotes></releaseNotes>
