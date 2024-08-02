@@ -3,7 +3,7 @@
   <metadata>
     <id>RecruitWizard.Encryption</id>
     <version>$version</version>
-    <title>RecruitWizard - Encryption</title>
+    <title>Recruit Wizard - Encryption</title>
     <authors>Recruit Wizard</authors>
     <owners>Recruit Wizard</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -12,6 +12,11 @@
     <description>Simple Encryption Library used across Recruit Wizard products</description>
     <releaseNotes></releaseNotes>
     <copyright>Copyright Recruit Wizard 2024</copyright>
+    <dependencies>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="BouncyCastle.NetCore" version="2.2.1" />
+      </group>
+    </dependencies>
   </metadata>
   <files>
         <file src="bin/Release/netstandard2.1/RecruitWizard.Encryption.dll" target="lib/netstandard2.1" />
