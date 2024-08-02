@@ -71,9 +71,3 @@ jobs:
     - name: Push - Nuget.Org (Main Only)
       if: github.ref == 'refs/heads/main'
       run: dotnet nuget push --source https://api.nuget.org/v3/index.json --api-key ${{ secrets.NUGET_API_KEY }} packaging/*.nupkg
-
-    - name: Create a Release in GitHub
-      if: github.ref == 'refs/heads/main'
-      run: gh release create ${{ steps.gitversion.outputs.GitVersion_NuGetVersionV2 }} --target ${{ github.sha }} 
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
